@@ -14,7 +14,7 @@ from async_m3u8.common import get_url_list, log_fmt
 
 
 def main():
-    url_list = get_url_list()
+    url_list = get_url_list("low.m3u8")
 
     # For testing purposes, truncate to first 100
     url_list = url_list[:100]

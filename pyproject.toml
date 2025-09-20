@@ -5,8 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "httpx[h2,http2]>=0.28.1",
+    "aiofiles>=24.1.0",
+    "click>=8.3.0",
+    "httpx[http2]>=0.28.1",
 ]
+
+[project.scripts]
+download = "async_m3u8.download:cli"
 
 [build-system]
 requires = ["flit_core >=3.2,<4"]
